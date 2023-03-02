@@ -84,8 +84,8 @@ terraform apply
 terraform destroy
 ```
 ## Terraform .gitignore list
-.terraform
-.terraform.lock.hcl
-terraform.tfstate
-terraform.tfstate.backup
-variable.tf
+* .terraform
+* .terraform.lock.hcl
+* terraform.tfstate
+* terraform.tfstate.backup
+* variable.tf
