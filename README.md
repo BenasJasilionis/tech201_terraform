@@ -71,6 +71,7 @@ resource "aws_instance" "app_instance" {
   }	
 }
 ```
+* Retplace the `ami` with your `ami` and the `Name` with the anem you would like to use
 5) Run the following to check if there are errors with the script:
 ```
 terraform plan
