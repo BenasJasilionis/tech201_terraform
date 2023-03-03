@@ -1,7 +1,11 @@
 ## Terraform
+* Terraform is idempotent -> Idempotent means no matter how many times you run your IaC and, what your starting state is, you will end up with the same end state
+* Idempotency is key for automation -> If we want to add more CPU power to our instance, we can update out script, and when we run terraform apply our current instance will be updated, rather than a new instance being created.
+* The desired state of the terraform generated instance is stored in `.terraform.tfstate` -> This file is generated after first running `terraform apply`
 * Terraform is used for building infrastructure, e.g: services (like ec2), vpc's, subnets, whereas ansible is used to manage configurations within infrasturcture and services, e.g: provision instances with playbooks.
 * Terraform has a vault similarly ansible.
 * Terraform scripts are held in the `main.tf` file which is made locally
+* Terraform scripts are written in `HashiCorp Configuration Language (HCL)` which has a similar configuration to `JSON` with its key value pairs
 ## Terraform advantages
 * Terraform is user friendly
 * Terraform documentation is easy to follow
